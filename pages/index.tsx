@@ -5,9 +5,10 @@ import Dashboard from "@components/dashboard";
 
 const Home: NextPage = () => {
   const { data, error, isLoading } = useGetCovidDataQuery();
+
   if (isLoading) {
     return (
-      <div className=" animate-spin border-t-4 rounded-full border-gray-500 w-16 h-16 ml-2"></div>
+      <div className=" animate-spin border-4 rounded-full border-white border-t-blue-600  border-r-blue-600 w-16 h-16 mx-auto mt-24"></div>
     );
   }
   if (error) {
